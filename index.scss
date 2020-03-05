@@ -1,0 +1,167 @@
+// $font-size-base: 0.75 rem;
+// TO-DO:
+// cards hoverable
+
+$primary: #fed136;
+
+$header-jumbotron-height: 250px;
+$section-padding: 115px;
+$letter-spacing: 0.15rem;
+$grey-color: #f6f6f6;
+$grey-color-darker: #e6e6e6;
+
+@import "lib/bootstrap/scss/bootstrap";
+
+.page-header {
+    background-image: url("images/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+}
+
+.navbar-dark {
+
+    .navbar-brand {
+    padding-top: 0.2rem;
+    color:$primary;
+    font-style: italic;
+    }
+
+     .navbar-nav .nav-link {
+        letter-spacing: $letter-spacing;
+    }
+}
+
+#modal{
+
+    .modal-header{
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    i{
+        padding-right: 1rem;
+    }
+}
+
+.header-jumbotron {
+    background-color: transparent;
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+
+
+    @include media-breakpoint-up(sm) {
+        height: 250px;
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 300px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 350px;
+    }
+
+    h1{
+        color: $primary;
+        padding-bottom: 15px;
+    }
+
+    p {
+        
+        background-color: #191919;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        font-weight: lighter;
+    }
+}
+
+.display-6 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 0px;
+}
+
+.sctn {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;  
+}
+
+.aboutMe h4 {
+
+        @include media-breakpoint-up(sm) {
+            padding-left: 7px;
+        }
+}
+
+.skills {
+
+    background-color: $grey-color;
+
+    .skill-icons {
+
+        padding-top: 0.35rem;
+        font-size: 2rem;
+        border: 2px solid $primary;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        margin: 0px auto;
+        text-align: center;
+        color: $primary;
+
+    }
+
+    h4{
+        padding-top: 1rem;
+    }
+
+   
+
+}
+
+
+.portfolio {
+    background-color: $grey-color;
+}
+
+.career {
+
+    @include media-breakpoint-up(md){
+        .careerList {
+        background: linear-gradient(to right, white 0%, white calc(50% - 1px), $grey-color-darker calc(50% - 1px), $grey-color-darker calc(50% + 1px), white calc(50% + 1px), white 100%);
+        }
+
+        .row:last-child{
+            background-color: white;
+        }
+    }
+
+}
+
+.mrgn-bttm{
+    margin-bottom: 3.5rem;
+}
+
+.spacing {
+    letter-spacing: $letter-spacing;
+}
+
+.spacing-wide {
+    letter-spacing: 0.3rem;
+}
+
+.round-image{
+    border-radius: 50%;
+    border: 5px solid $grey-color-darker;
+}
+
+.handwritten {
+    font-family: 'Homemade Apple', cursive;
+}
+
